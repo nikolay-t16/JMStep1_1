@@ -1,0 +1,21 @@
+@import '../../../assets/scss/utils/base';
+.index {
+  width: 100%;
+  height: 100%;
+  // TODO remove, only for perfect pixel
+  max-width: 1600px;
+  background-color: $mainBackgroundColor;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    margin-top: em(100);
+    width: 100%;
+    max-width: em(1440);
+    display: flex;
+  }
+
+  &__content-photo {
+    width: 52.7%;
+  }
+}

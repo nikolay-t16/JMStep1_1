@@ -34,8 +34,6 @@ const walkSync = (dir, fileList = []) => {
   return fileList;
 }
 const PAGES = walkSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
-console.log('PAGES', PAGES);
-console.log('PAGES_DIR', PAGES_DIR);
 
 
 module.exports = {
@@ -127,7 +125,7 @@ module.exports = {
       return new HtmlWebpackPlugin({
             template: page,
             filename: `./${page.substring(page.lastIndexOf('\\')).replace('.pug', '.html')}`,
-            inject: false
+            inject: true
           });
         }
     )
