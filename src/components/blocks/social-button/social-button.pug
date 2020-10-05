@@ -1,0 +1,12 @@
+mixin social-button(options)
+  -
+    const {
+      label,
+      icon,
+      backgroundColor = '',
+    } = options;
+  .social-button(style=`background-color: ${backgroundColor}`)
+    .social-button__icon
+      img.social-button__icon-img(src=icon alt="")
+    .social-button__label
+      =label

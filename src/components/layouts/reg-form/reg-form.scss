@@ -1,8 +1,24 @@
+@import '../../../assets/scss/utils/helpers';
+
 .reg-form {
   &__content-tittle-main {
     font-size: 1.8em;
   }
+
   &__content-tittle-sub {
     font-size: 1.2em;
+  }
+
+  &__content-social-buttons {
+    margin-top: em(55);
+    margin-left: em(2);
+    max-width: em(527);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-social-buttons-item {
+    width: em(246);
+    height: em(42);
   }
 }
