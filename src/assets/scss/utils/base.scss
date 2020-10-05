@@ -2,6 +2,13 @@
 @import 'vars';
 @import 'helpers';
 
+@font-face {
+  font-family: 'Conv_Barlow-Regular';
+  src: url('/assets/fonts/Barlow-Regular.eot');
+  src: local('☺'), url('/assets/fonts/Barlow-Regular.woff') format('woff'), url('/assets/fonts/Barlow-Regular.ttf') format('truetype'), url('/assets/fonts/Barlow-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -12,4 +19,8 @@
 body, html {
   height: 100%;
   width: 100%;
+  color: $mainFontColor;
+  font-family: 'Conv_Barlow-Regular';
+  font-style: normal;
+  font-weight: normal;
 }
