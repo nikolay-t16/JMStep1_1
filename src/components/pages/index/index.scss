@@ -12,15 +12,12 @@
     margin-top: em(100);
     width: 100%;
     max-width: em(1440);
-    display: flex;
-  }
-
-  &__content-photo {
-    width: 52.7%;
+    display: grid;
+    grid-template-columns: 52.7% 1fr;
   }
 
   &__content-form {
-    width: 47.3%;
-    padding: em(92) em(73);
+    padding: em(92) em(79px) em(92) em(73);
+    background: white;
   }
 }

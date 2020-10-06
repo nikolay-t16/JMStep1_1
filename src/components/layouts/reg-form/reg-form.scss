@@ -21,4 +21,29 @@
     width: em(246);
     height: em(42);
   }
+
+  &__content-separator {
+    margin-top: em(51);
+    display: flex;
+    justify-content: center;
+  }
+  &__content-separator-content {
+    max-width: em(249);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 13% 1fr;
+    align-items: center;
+  }
+  &__content-separator-line {
+    height: 1px;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+
+  &__content-separator-label {
+    font-size: em(12);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
 }
