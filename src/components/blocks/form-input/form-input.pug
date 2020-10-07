@@ -1,0 +1,7 @@
+mixin form-input(options)
+  -
+    const {label, value, type = 'text', isActive = false} = options;
+  .form-input(class = isActive ? 'form-input_state_active' : '')
+    .form-input__label
+      =label
+    input.form-input__input(type = type value = value)

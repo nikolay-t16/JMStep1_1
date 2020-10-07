@@ -46,4 +46,14 @@
     display: flex;
     justify-content: center;
   }
+
+  &__content-inputs {
+    display: flex;
+    margin-top: em(46);
+    justify-content: space-between;
+  }
+
+  &__content-inputs-item {
+    width: em(248);
+  }
 }

@@ -1,0 +1,30 @@
+@import '../../../assets/scss/utils/helpers';
+
+.form-input {
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  padding-left: em(11);
+  padding-top: em(4);
+  padding-bottom: em(12);
+
+  &:hover,&:active, &_state_active {
+    border-left-color: #3698FB;
+  }
+
+  &__label {
+    color: #9dabb4;
+    font-size: em(14);
+  }
+
+  &__input {
+    border: none;
+    padding-top: em(7);
+    width: 100%;
+  }
+
+  &__input:focus {
+    border: none;
+    outline:none;
+  }
+}
+

@@ -1,4 +1,5 @@
 include ../../blocks/social-button/social-button
+include ../../blocks/form-input/form-input
 include ./reg-form-data
 .reg-form
   .reg-form__content
@@ -14,4 +15,8 @@ include ./reg-form-data
         .reg-form__content-separator-line
         .reg-form__content-separator-label or
         .reg-form__content-separator-line
+    .reg-form__content-inputs
+      each input in inputs
+        .reg-form__content-inputs-item
+          +form-input(input)
 
