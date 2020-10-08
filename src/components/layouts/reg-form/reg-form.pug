@@ -1,5 +1,6 @@
 include ../../blocks/social-button/social-button
 include ../../blocks/form-input/form-input
+include ../../blocks/form-radiobutton/form-radiobutton
 include ./reg-form-data
 .reg-form
   .reg-form__content
@@ -19,4 +20,10 @@ include ./reg-form-data
       each input in inputs
         .reg-form__content-inputs-item
           +form-input(input)
-
+    .reg-form__content-investor-types
+      h2.reg-form__content-investor-types-title-main What type of investor are you?
+      p.reg-form__content-investor-types-title-sub Select the type of investor you are bellow
+      .reg-form__content-investor-types-items
+        each investorType in investorTypes
+          .reg-form__content-investor-types-items-item
+            +form-radiobutton(investorType)

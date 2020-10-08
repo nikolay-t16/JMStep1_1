@@ -1,0 +1,12 @@
+mixin form-radiobutton(options)
+  -
+    const {
+      label = '',
+      name = '',
+      isChecked = false,
+    } = options;
+  label.form-radiobutton
+    input(type="radio" checked=isChecked name=name).form-radiobutton__input
+    span.form-radiobutton__checkmark
+    =label
+    span.form-radiobutton__info-icon ⓘ

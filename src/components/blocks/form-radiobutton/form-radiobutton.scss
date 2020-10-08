@@ -1,0 +1,36 @@
+@import '../../../assets/scss/utils/helpers';
+
+.form-radiobutton {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 15px;
+
+  &__input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid #AFAFAF;
+  }
+
+  &__input:checked ~ &__checkmark {
+    height: em(18);
+    width: em(18);
+    background-color: #fff;
+    border: 4px solid #3698FB;
+  }
+
+  &__info-icon {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+}

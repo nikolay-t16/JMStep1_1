@@ -1,59 +1,94 @@
 @import '../../../assets/scss/utils/helpers';
+@import '../../../assets/scss/utils/vars';
 
 .reg-form {
-  &__content-tittle-main {
-    font-size: 1.8em;
-  }
+  &__content {
+    &_-tittle {
+      &-main {
+        font-size: 1.8em;
+      }
 
-  &__content-tittle-sub {
-    font-size: 1.2em;
-  }
+      &-sub {
+        color: $subFontColor;
+        font-size: 1.2em;
+      }
+    }
 
-  &__content-social-buttons {
-    margin-top: em(55);
-    margin-left: em(2);
-    max-width: em(527);
-    display: flex;
-    justify-content: space-between;
-  }
 
-  &__content-social-buttons-item {
-    width: em(246);
-    height: em(42);
-  }
+    &-social-buttons {
+      margin-top: em(55);
+      margin-left: em(2);
+      max-width: em(527);
+      display: flex;
+      justify-content: space-between;
 
-  &__content-separator {
-    margin-top: em(51);
-    display: flex;
-    justify-content: center;
-  }
-  &__content-separator-content {
-    max-width: em(249);
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 13% 1fr;
-    align-items: center;
-  }
-  &__content-separator-line {
-    height: 1px;
-    width: 100%;
-    background-color: #E5E5E5;
-  }
+      &-item {
+        width: em(246);
+        height: em(42);
+      }
+    }
 
-  &__content-separator-label {
-    font-size: em(12);
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-  }
 
-  &__content-inputs {
-    display: flex;
-    margin-top: em(46);
-    justify-content: space-between;
-  }
+    &-separator {
+      margin-top: em(51);
+      display: flex;
+      justify-content: center;
 
-  &__content-inputs-item {
-    width: em(248);
+      &-content {
+        max-width: em(249);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 13% 1fr;
+        align-items: center;
+      }
+
+      &-line {
+        height: 1px;
+        width: 100%;
+        background-color: #E5E5E5;
+      }
+
+      &-label {
+        font-size: em(12);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+
+    &-inputs {
+      display: flex;
+      margin-top: em(46);
+      justify-content: space-between;
+
+      &-item {
+        width: em(248);
+      }
+    }
+
+    &-investor-types {
+      margin-top: em(59);
+
+      &-title-main {
+        font-size: em(21);
+        letter-spacing: 0.2px;
+      }
+
+      &-title-sub {
+        font-size: em(14);
+        margin-top: em(15);
+        color: $subFontColor
+      }
+
+      &-items {
+        max-width: em(486);
+        margin-top: em(49);
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+
   }
 }
