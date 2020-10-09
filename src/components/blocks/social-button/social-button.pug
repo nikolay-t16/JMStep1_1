@@ -4,9 +4,17 @@ mixin social-button(options)
       label,
       icon,
       backgroundColor = '',
+      theme = 'fb',
     } = options;
-  .social-button(style=`background-color: ${backgroundColor}`)
+
+    let classTheme = '';
+    if (theme === 'fb' || theme === 'ld') {
+      classTheme = `social-button_theme_${theme}`;
+    }
+
+  button.social-button(class=classTheme)
     .social-button__icon
-      img.social-button__icon-img(src=icon alt="")
+      .social-button__icon-img
+        !=icon
     .social-button__label
       =label

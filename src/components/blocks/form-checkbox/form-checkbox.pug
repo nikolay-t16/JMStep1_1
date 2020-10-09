@@ -1,0 +1,8 @@
+mixin form-checkbox(options)
+  -
+    const {name, label, isChecked = false} = options;
+
+  label.form-checkbox
+    input.form-checkbox__input(type='checkbox' name=name checked=isChecked)
+    span.form-checkbox__checkbox
+    != label

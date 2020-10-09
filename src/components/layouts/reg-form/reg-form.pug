@@ -1,8 +1,12 @@
 include ../../blocks/social-button/social-button
 include ../../blocks/form-input/form-input
 include ../../blocks/form-radiobutton/form-radiobutton
+include ../../blocks/form-checkbox/form-checkbox
+include ../../blocks/form-submit/form-submit
+
 include ./reg-form-data
-.reg-form
+
+form.reg-form
   .reg-form__content
     .reg-form__content-tittle
       h1.reg-form__content-tittle-main Get iintoo it today
@@ -27,3 +31,9 @@ include ./reg-form-data
         each investorType in investorTypes
           .reg-form__content-investor-types-items-item
             +form-radiobutton(investorType)
+      .reg-form__content-investor-types-hint I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+    .reg-form__content-confirm
+      +form-checkbox(checkbox)
+    .reg-form__content-submit
+      +form-submit(submit)
+

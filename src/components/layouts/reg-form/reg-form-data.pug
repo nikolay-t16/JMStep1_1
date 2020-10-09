@@ -1,14 +1,32 @@
 -
   const buttons = [
     {
-      icon: 'assets/img/facebook.svg',
       label: 'Register with Facebook',
-      backgroundColor: '#255A9B',
+      theme: 'fb',
+      icon:`<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      \t viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
+      <g>
+      \t<path d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+      \t\tc0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+      \t\tv20.341H37.29v27.585h23.814v70.761H89.584z"/>
+      </g>
+      </svg>`,
     },
     {
-      icon: 'assets/img/linkedin.svg',
+      icon: `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      \t width="430.117px" height="430.117px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;"
+      \t xml:space="preserve">
+      <g>
+      \t<path d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+      \t\tc-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+      \t\tv39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+      \t\tC384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+      \t\tc0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+      \t\t M5.477,420.56h92.184v-277.32H5.477V420.56z"/>
+      </g>
+      </svg>`,
       label: 'Register with Linkedin',
-      backgroundColor: '#0076B6',
+      theme: 'ld',
     },
   ];
 
@@ -43,4 +61,13 @@
       label: 'Trust',
       name: 'investorTypes',
     },
-  ]
+  ];
+
+  const checkbox = {
+    label: 'I agree to the terms and receiving notifications from iintoo  <a href="javascript:;"> View full terms</a>',
+    name: 'checkbox',
+  }
+
+  const submit = {
+    label: 'Create Account'
+  }

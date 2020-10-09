@@ -13,11 +13,11 @@
     width: 100%;
     max-width: em(1440);
     display: grid;
-    grid-template-columns: 52.7% 1fr;
-  }
+    grid-template-columns: 52.8% 1fr;
 
-  &__content-form {
-    padding: em(92) em(79) em(92) em(73);
-    background: white;
+    &-form {
+      padding: em(92) em(79) em(92) em(73);
+      background: white;
+    }
   }
 }

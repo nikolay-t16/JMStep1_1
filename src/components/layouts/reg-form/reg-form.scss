@@ -3,7 +3,7 @@
 
 .reg-form {
   &__content {
-    &_-tittle {
+    &-tittle {
       &-main {
         font-size: 1.8em;
       }
@@ -69,16 +69,17 @@
 
     &-investor-types {
       margin-top: em(59);
+      &-title {
+        &-main {
+          font-size: em(21);
+          letter-spacing: 0.2px;
+        }
 
-      &-title-main {
-        font-size: em(21);
-        letter-spacing: 0.2px;
-      }
-
-      &-title-sub {
-        font-size: em(14);
-        margin-top: em(15);
-        color: $subFontColor
+        &-sub {
+          font-size: em(14);
+          margin-top: em(15);
+          color: $subFontColor
+        }
       }
 
       &-items {
@@ -87,8 +88,30 @@
         display: flex;
         justify-content: space-between;
       }
+
+      &-hint {
+        margin-top: 1.8em;
+        margin-left: em(5);
+        padding: em(10);
+        box-shadow: 0 0 em(20) rgba(157, 171, 187, 0.5);
+        border-radius: em(3);
+        width: 18.21em;
+        height: 5.3em;
+        font-size: em(14);
+        color: #9dabb4;
+      }
+
+
+    }
+    &-confirm {
+      margin-top: em(44);
+      margin-left: 1px;
     }
 
+    &-submit {
+      margin-top: em(60);
+      margin-left: em(2);
+    }
 
   }
 }
