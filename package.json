@@ -35,7 +35,8 @@
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
-    "build": "webpack --config ./build/webpack.build.conf.js"
+    "build": "webpack --config ./build/webpack.build.conf.js",
+    "gh-publish": "gh-pages -d dist"
   },
   "browserslist": [
     "> 1%",
@@ -51,5 +52,7 @@
     "url": "https://github.com/nikolay-t16/ResumeTest/issues"
   },
   "homepage": "https://github.com/nikolay-t16/ResumeTest#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
