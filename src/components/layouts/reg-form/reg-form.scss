@@ -21,16 +21,23 @@
       max-width: em(527);
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       &-item {
         width: em(246);
         height: em(42);
+        margin-bottom: em(20);
+      }
+
+      &-item:first-child {
+        margin-right: em(20);
       }
     }
 
 
     &-separator {
-      margin-top: em(51);
+      margin-top: em(31);
+      max-width: em(527);
       display: flex;
       justify-content: center;
 
@@ -59,16 +66,22 @@
 
     &-inputs {
       display: flex;
+      flex-wrap: wrap;
       margin-top: em(46);
       justify-content: space-between;
+      max-width: em(534);
 
       &-item {
         width: em(248);
+        margin-bottom: em(20);
+      }
+      &-item:first-child {
+        margin-right: em(20);
       }
     }
 
     &-investor-types {
-      margin-top: em(59);
+      margin-top: em(39);
       &-title {
         &-main {
           font-size: em(21);
@@ -86,7 +99,16 @@
         max-width: em(486);
         margin-top: em(49);
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-item {
+          margin-right: em(36);
+          margin-bottom: em(10);
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
       }
 
       &-hint {
